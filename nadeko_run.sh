@@ -12,9 +12,9 @@ else
 	echo "Dotnet is not installed. Please install dotnet."
 	exit 1
 fi
-cd "$root/NadekoBot"
-dotnet restore
-dotnet build --configuration Release
+# cd "$root/NadekoBot"
+# dotnet restore
+# dotnet build --configuration Release
 cd "$root/NadekoBot/src/NadekoBot"
 echo "Running NadekoBot. Please wait."
 dotnet run --configuration Release
